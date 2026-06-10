@@ -136,10 +136,11 @@ img {
 }
 
 .hero-text h1 {
-    font-size: clamp(4rem, 8vw, 6rem);
-    line-height: .95;
+    .hero-text h1 {
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    line-height: 1;
     font-weight: 800;
-    margin-bottom: 16px;
+}
 }
 
 .hero-text h1 span {
@@ -148,8 +149,8 @@ img {
 }
 
 .roles {
-    font-size: 2rem;
-    font-weight: 600;
+      font-size: 2.2rem;
+    font-weight: 700;
     color: white;
     margin-bottom: 24px;
 }
@@ -185,7 +186,13 @@ img {
 }
 
 .hero-image img:hover {
-    transform: translateY(-10px);
+      transform:
+        translateY(-10px)
+        scale(1.02);
+
+    box-shadow:
+        0 0 60px rgba(59,130,246,.45),
+        0 0 140px rgba(59,130,246,.20);
 }
 
 .stats {
@@ -240,7 +247,15 @@ img {
 }
 
 .social-item:hover {
-    color: #1e90ff;
+  .social-item:hover {
+
+    border-color: #1e90ff;
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 0 20px rgba(59,130,246,.25);
+}
 }
 
 .social-item:hover img {
@@ -402,17 +417,29 @@ img {
 }
 
 @media (max-width: 768px) {
-    .nav-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 14px 0;
-    }
+    .nav-links a {
+    position: relative;
+}
 
-    .nav-links {
-        gap: 18px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 2px;
+
+    background: #3b82f6;
+
+    transition: width .3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
 
     .hero-section {
         padding: 48px 0 32px;
