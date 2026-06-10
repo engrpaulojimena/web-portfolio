@@ -545,3 +545,49 @@ img {
 .project-card:hover .project-image {
     transform: scale(1.03);
 }
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.tech-stack span {
+    padding: 8px 14px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 999px;
+    background: rgba(255,255,255,0.05);
+    font-size: 0.9rem;
+}
+@media (max-width: 560px) {
+
+    .hero-text h1 {
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+
+    .roles {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    .tech-stack {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .social-item {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
