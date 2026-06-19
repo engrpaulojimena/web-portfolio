@@ -531,6 +531,15 @@ body.light .social-item:hover img {
     transform: translateY(-2px);
 }
 
+.btn-project-disabled {
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-input);
+    cursor: not-allowed;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
 /* ── Contact ── */
 .contact-container {
     max-width: 760px;
