@@ -476,18 +476,24 @@ body.light .social-chip img { filter: brightness(0) invert(0.3); }
     0 0 160px rgba(34,211,238,0.12);
 }
 
-/* Responsive: scale orbit down, hide outer ring on small screens */
+/* Responsive: shrink orbit tags instead of hiding them on small screens */
 @media (max-width: 980px) {
   .hero-visual { max-width: 380px; }
-  .ring-2 { display: none; }
   .ring-1 { width: 260px; height: 260px; }
-  .ring-1 .orbit-icon { transform: rotate(var(--angle)) translateX(130px) rotate(calc(-1 * var(--angle))); }
+  .ring-2 { width: 360px; height: 360px; }
+  .ring-1 .orbit-icon { transform: rotate(var(--angle)) translateX(130px) rotate(calc(-1 * var(--angle))); --r: 130px; }
+  .ring-2 .orbit-icon { transform: rotate(var(--angle)) translateX(180px) rotate(calc(-1 * var(--angle))); --r: 180px; }
+  .orbit-icon { font-size: 0.62rem; padding: 5px 10px; }
   .hero-img-frame { width: 180px; height: 215px; }
 }
 @media (max-width: 640px) {
-  .hero-visual { max-width: 280px; }
-  .ring-1 { display: none; }
-  .hero-img-frame { width: 200px; height: 240px; }
+  .hero-visual { max-width: 280px; aspect-ratio: 1; }
+  .ring-1 { width: 200px; height: 200px; }
+  .ring-2 { width: 280px; height: 280px; }
+  .ring-1 .orbit-icon { transform: rotate(var(--angle)) translateX(100px) rotate(calc(-1 * var(--angle))); --r: 100px; }
+  .ring-2 .orbit-icon { transform: rotate(var(--angle)) translateX(140px) rotate(calc(-1 * var(--angle))); --r: 140px; }
+  .orbit-icon { font-size: 0.5rem; padding: 3px 7px; letter-spacing: 0.01em; }
+  .hero-img-frame { width: 140px; height: 168px; }
 }
 
 /* ── STATS ── */
