@@ -4,24 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paulo C. Jimena | Full Stack Developer</title>
-  <meta name="description" content="Portfolio of Paulo C. Jimena, Full Stack Developer specializing in ASP.NET Core, React, and SQL Server." />
+  <meta name="description" content="Portfolio of Paulo C. Jimena, Full Stack Developer specializing in Next.js, React, Python, and PostgreSQL." />
   <link rel="icon" type="image/png" href="icons/myicon.png" />
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- ── Navbar ── -->
+  <!-- ── NAVBAR ── -->
   <nav class="navbar">
     <div class="container nav-container">
       <a href="#home" class="logo">PJ</a>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#home"       class="nav-link">Home</a></li>
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
       </ul>
       <div class="nav-right">
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
@@ -33,315 +33,339 @@
     </div>
   </nav>
 
-  <!-- ── Hero ── -->
+  <!-- ── HERO ── -->
   <header id="home" class="hero-section">
-    <div class="container hero-content">
+    <div class="container hero-layout">
+
+      <!-- Left: Text -->
       <div class="hero-text">
-        <p class="eyebrow">Hello 🙌 , I'm</p>
-        <h1>Paulo C. Jimena</h1>
-        <p class="roles">Full Stack Developer | Next.js | React | Python | PostgreSQL</p>
-        <p class="intro">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Available for opportunities
+        </div>
+
+        <h1 class="hero-name">Paulo C.<br>Jimena</h1>
+
+        <div class="hero-roles">
+          <span>Full Stack Dev</span>
+          <span class="role-sep">/</span>
+          <span>Next.js &amp; React</span>
+          <span class="role-sep">/</span>
+          <span>Python</span>
+          <span class="role-sep">/</span>
+          <span>PostgreSQL</span>
+        </div>
+
+        <p class="hero-intro">
           I build modern web applications and business systems with clean design,
           scalable architecture, and practical real-world functionality.
         </p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn-primary">View Projects</a>
-          <a href="resume.pdf" class="btn-secondary" target="_blank">Download Resume</a>
-        </div>
-        <div class="social-links">
-          <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-item">
-            <img src="icons/linkedin.svg" alt="LinkedIn"> LinkedIn
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">
+            View Projects
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="mailto:your@email.com" class="social-item">
-            <img src="icons/email.svg" alt="Email"> Email
+          <a href="resume.pdf" class="btn-secondary" target="_blank">
+            Download Resume
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v8M3.5 6l3.5 3.5L10.5 6M2 12h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-chip">
+            <img src="icons/linkedin.svg" alt=""> LinkedIn
+          </a>
+          <a href="mailto:your@email.com" class="social-chip">
+            <img src="icons/email.svg" alt=""> Email
           </a>
         </div>
       </div>
-      <div class="hero-image">
-        <img src="images/hero.png" alt="Paulo working on a laptop at his desk">
+
+      <!-- Right: Image with floating skill tags -->
+      <div class="hero-visual">
+
+        <div class="orbit-ring ring-1">
+          <span class="orbit-icon" style="--angle:0deg">VB.NET</span>
+          <span class="orbit-icon accent" style="--angle:60deg">MS SQL Server</span>
+          <span class="orbit-icon" style="--angle:120deg">Crystal Reports</span>
+          <span class="orbit-icon accent2" style="--angle:180deg">Python / Flask</span>
+          <span class="orbit-icon" style="--angle:240deg">PostgreSQL</span>
+          <span class="orbit-icon accent" style="--angle:300deg">Next.js</span>
+        </div>
+
+        <div class="orbit-ring ring-2">
+          <span class="orbit-icon accent2" style="--angle:0deg">React</span>
+          <span class="orbit-icon" style="--angle:51deg">TypeScript</span>
+          <span class="orbit-icon accent" style="--angle:102deg">Tailwind</span>
+          <span class="orbit-icon" style="--angle:153deg">HTML / CSS / JS</span>
+          <span class="orbit-icon accent2" style="--angle:204deg">Node.js</span>
+          <span class="orbit-icon" style="--angle:255deg">Git / GitHub</span>
+          <span class="orbit-icon accent" style="--angle:306deg">Vercel</span>
+        </div>
+
+        <!-- Center image -->
+        <div class="hero-img-frame">
+          <img src="images/hero.png" alt="Paulo C. Jimena">
+        </div>
       </div>
+
     </div>
   </header>
 
-  <!-- ── Stats Counter ── -->
-  <section class="section stats-section">
+  <!-- ── STATS ── -->
+  <section class="stats-strip">
     <div class="container">
-      <div class="stats-grid">
-        <div class="stat-card">
-          <span class="stat-number" data-target="3">0</span>
-          <span class="stat-plus">+</span>
-          <p>Years of Experience</p>
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-num">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-sup">+</span>
+          </div>
+          <p class="stat-label">Years of Experience</p>
         </div>
-        <div class="stat-card">
-          <span class="stat-number" data-target="10">0</span>
-          <span class="stat-plus">+</span>
-          <p>Projects Built</p>
+        <div class="stat-item">
+          <div class="stat-num">
+            <span class="stat-number" data-target="10">0</span>
+            <span class="stat-sup">+</span>
+          </div>
+          <p class="stat-label">Projects Built</p>
         </div>
-        <div class="stat-card">
-          <span class="stat-number" data-target="12">0</span>
-          <span class="stat-plus">+</span>
-          <p>Technologies Used</p>
+        <div class="stat-item">
+          <div class="stat-num">
+            <span class="stat-number" data-target="12">0</span>
+            <span class="stat-sup">+</span>
+          </div>
+          <p class="stat-label">Technologies Used</p>
         </div>
-        <div class="stat-card">
-          <span class="stat-number" data-target="100">0</span>
-          <span class="stat-plus">%</span>
-          <p>Commitment to Quality</p>
+        <div class="stat-item">
+          <div class="stat-num">
+            <span class="stat-number" data-target="100">0</span>
+            <span class="stat-sup">%</span>
+          </div>
+          <p class="stat-label">Commitment to Quality</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── About ── -->
-  <section id="about" class="section section-dark">
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section">
     <div class="container">
-      <div class="section-header">
-        <h2>About Me</h2>
-        <p>
-          I am a Full Stack Developer focused on building business applications and
-          web-based systems using ASP.NET Core, React, and SQL Server. I enjoy
-          creating clean, responsive, and practical solutions that solve real-world
-          problems and improve business processes.
-        </p>
+      <div class="section-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-label">About Me</span>
       </div>
-      <div class="info-cards">
-        <div class="card">
-          <h3>Clean Code</h3>
-          <p>Writing maintainable and scalable code is one of my top priorities.</p>
+      <h2 class="section-title">Who I am</h2>
+      <p class="section-desc">Turning complex business requirements into clean, maintainable software.</p>
+
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <p>
+            I'm a Full Stack Developer focused on building business applications and
+            web-based systems. With experience in insurance software at Moylan's, I understand
+            how to build systems that handle real complexity — not just demos.
+          </p>
+          <p>
+            I work across the full stack: from database schema design to pixel-perfect UIs,
+            using Next.js, React, Python/Flask, and PostgreSQL as my primary tools.
+          </p>
         </div>
-        <div class="card">
-          <h3>Performance</h3>
-          <p>Building fast and optimized applications for better user experience.</p>
-        </div>
-        <div class="card">
-          <h3>Problem Solving</h3>
-          <p>Turning business needs into practical systems and efficient workflows.</p>
-        </div>
-        <div class="card">
-          <h3>Collaboration</h3>
-          <p>Working effectively with teams through communication and shared goals.</p>
+
+        <div class="about-cards">
+          <div class="about-card reveal reveal-delay-1">
+            <span class="about-card-icon">🧹</span>
+            <h3>Clean Code</h3>
+            <p>Writing maintainable and scalable code is one of my top priorities.</p>
+          </div>
+          <div class="about-card reveal reveal-delay-2">
+            <span class="about-card-icon">⚡</span>
+            <h3>Performance</h3>
+            <p>Building fast and optimized applications for better user experience.</p>
+          </div>
+          <div class="about-card reveal reveal-delay-3">
+            <span class="about-card-icon">🔧</span>
+            <h3>Problem Solving</h3>
+            <p>Turning business needs into practical systems and efficient workflows.</p>
+          </div>
+          <div class="about-card reveal reveal-delay-4">
+            <span class="about-card-icon">🤝</span>
+            <h3>Collaboration</h3>
+            <p>Working effectively with teams through communication and shared goals.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Skills with Progress Bars ── -->
-  <section id="skills" class="section">
+  <!-- ── SKILLS ── -->
+  <section id="skills" class="section section-alt">
     <div class="container">
-      <div class="section-header">
-        <h2>Technical Skills</h2>
-        <p>Technologies and tools I use to build responsive frontends, scalable APIs, and database-driven systems.</p>
+      <div class="section-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-label">Technical Skills</span>
       </div>
+      <h2 class="section-title">What I work with</h2>
+      <p class="section-desc">Technologies and tools I use to build responsive frontends, scalable APIs, and database-driven systems.</p>
 
-      <div class="skills-layout">
-        <div class="skill-bars">
-          <div class="skill-bar-item">
-            <div class="skill-bar-header">
-              <span>Next.js / React</span><span>85%</span>
-            </div>
-            <div class="bar-track">
-              <div class="bar-fill" data-width="85"></div>
-            </div>
+      <div class="skills-split">
+        <div class="skill-list" id="skill-bars">
+          <div class="skill-row reveal">
+            <div class="skill-meta"><span class="skill-name">Next.js / React</span><span class="skill-pct">85%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
           </div>
-          <div class="skill-bar-item">
-            <div class="skill-bar-header">
-              <span>TypeScript</span><span>78%</span>
-            </div>
-            <div class="bar-track">
-              <div class="bar-fill" data-width="78"></div>
-            </div>
+          <div class="skill-row reveal reveal-delay-1">
+            <div class="skill-meta"><span class="skill-name">TypeScript</span><span class="skill-pct">78%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="78"></div></div>
           </div>
-          <div class="skill-bar-item">
-            <div class="skill-bar-header">
-              <span>Python / Flask</span><span>80%</span>
-            </div>
-            <div class="bar-track">
-              <div class="bar-fill" data-width="80"></div>
-            </div>
+          <div class="skill-row reveal reveal-delay-2">
+            <div class="skill-meta"><span class="skill-name">Python / Flask</span><span class="skill-pct">80%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
           </div>
-          <div class="skill-bar-item">
-            <div class="skill-bar-header">
-              <span>PostgreSQL</span><span>82%</span>
-            </div>
-            <div class="bar-track">
-              <div class="bar-fill" data-width="82"></div>
-            </div>
+          <div class="skill-row reveal reveal-delay-3">
+            <div class="skill-meta"><span class="skill-name">PostgreSQL</span><span class="skill-pct">82%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="82"></div></div>
           </div>
-          <div class="skill-bar-item">
-            <div class="skill-bar-header">
-              <span>Tailwind CSS</span><span>80%</span>
-            </div>
-            <div class="bar-track">
-              <div class="bar-fill" data-width="80"></div>
-            </div>
+          <div class="skill-row reveal reveal-delay-4">
+            <div class="skill-meta"><span class="skill-name">Tailwind CSS</span><span class="skill-pct">80%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
           </div>
-          <div class="skill-bar-item">
-            <div class="skill-bar-header">
-              <span>HTML / CSS / JavaScript</span><span>88%</span>
-            </div>
-            <div class="bar-track">
-              <div class="bar-fill" data-width="88"></div>
-            </div>
+          <div class="skill-row reveal reveal-delay-4">
+            <div class="skill-meta"><span class="skill-name">HTML / CSS / JavaScript</span><span class="skill-pct">88%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
           </div>
         </div>
 
-        <div class="skills-tags-group">
-          <p class="skills-tags-label">Tools & Others</p>
-          <div class="skills-container">
-            <span>Node.js</span>
-            <span>Recharts</span>
-            <span>bcryptjs</span>
-            <span>jose</span>
-            <span>Nodemailer</span>
-            <span>Jinja Templates</span>
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>Vercel</span>
-            <span>Render</span>
-            <span>Neon Database</span>
-            <span>VS Code</span>
+        <div class="tools-section reveal">
+          <p class="tools-label">// Tools & Others</p>
+          <div class="tools-grid">
+            <span class="tool-tag">Node.js</span>
+            <span class="tool-tag">Recharts</span>
+            <span class="tool-tag">bcryptjs</span>
+            <span class="tool-tag">jose</span>
+            <span class="tool-tag">Nodemailer</span>
+            <span class="tool-tag">Jinja</span>
+            <span class="tool-tag">Git</span>
+            <span class="tool-tag">GitHub</span>
+            <span class="tool-tag">Vercel</span>
+            <span class="tool-tag">Render</span>
+            <span class="tool-tag">Neon DB</span>
+            <span class="tool-tag">VS Code</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Experience Timeline ── -->
-  <section id="experience" class="section section-dark">
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience" class="section">
     <div class="container">
-      <div class="section-header">
-        <h2>Experience</h2>
-        <p>My professional journey as a developer.</p>
+      <div class="section-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-label">Experience</span>
       </div>
+      <h2 class="section-title">Professional journey</h2>
+      <p class="section-desc">My career as a developer.</p>
 
-      <div class="timeline">
+      <div class="timeline-wrap">
+        <div class="timeline-track"></div>
+        <div class="timeline-entries">
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">September 2023 – Present</span>
-            <h3>Mid-Level Programmer</h3>
-            <p class="timeline-company">Moylan's Insurance</p>
-            <p>Promoted after consistent performance. Primarily working on accounting systems with complex business logic and calculations. Handles data fixes, investigates and traces root causes of reported issues, and communicates directly with end users to resolve problems — no longer requiring supervisor mediation for user concerns.</p>
+          <div class="tl-entry reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-date">Sep 2023 — Present</div>
+              <div class="tl-title">Mid-Level Programmer</div>
+              <div class="tl-company">Moylan's Insurance</div>
+              <p class="tl-desc">Promoted after consistent performance. Primarily working on accounting systems with complex business logic and calculations. Handles data fixes, investigates and traces root causes of reported issues, and communicates directly with end users to resolve problems — no longer requiring supervisor mediation for user concerns.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">September 2022 – September 2023</span>
-            <h3>Entry-Level Programmer</h3>
-            <p class="timeline-company">Moylan's Insurance</p>
-            <p>First role out of college. Worked primarily on underwriting systems, handling data encoding and system maintenance. Gained hands-on experience with VB.NET, SQL Server, and Crystal Reports in a production insurance environment.</p>
+          <div class="tl-entry reveal reveal-delay-2">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-date">Sep 2022 — Sep 2023</div>
+              <div class="tl-title">Entry-Level Programmer</div>
+              <div class="tl-company">Moylan's Insurance</div>
+              <p class="tl-desc">First role out of college. Worked primarily on underwriting systems, handling data encoding and system maintenance. Gained hands-on experience with VB.NET, SQL Server, and Crystal Reports in a production insurance environment.</p>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Projects ── -->
-  <section id="projects" class="section">
+  <!-- ── PROJECTS ── -->
+  <section id="projects" class="section section-alt">
     <div class="container">
-      <div class="section-header">
-        <h2>Featured Projects</h2>
-        <p>Selected systems built for real business and operational use cases.</p>
+      <div class="section-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-label">Featured Projects</span>
       </div>
-      <div class="projects-container">
+      <h2 class="section-title">Things I've built</h2>
+      <p class="section-desc">Selected systems built for real business and operational use cases.</p>
 
-        <div class="project-card">
-          <div class="project-image-wrapper">
-            <img src="images/student-registration-preview.png" alt="Student Registration System" class="project-image">
+      <div class="projects-grid">
+
+        <div class="proj-card reveal">
+          <div class="proj-image-wrap">
+            <img src="images/student-registration-preview.png" alt="Student Registration System">
           </div>
-          <div class="project-card-body">
-            <h3>Student Registration System</h3>
-            <p>A web-based system for managing student registration, enrollment, courses, and subject records.</p>
-            <div class="project-tags">
-              <span>Next.js</span>
-              <span>React</span>
-              <span>TypeScript</span>
-              <span>Tailwind CSS</span>
-              <span>PostgreSQL</span>
-              <span>Authentication</span>
-              <span>Nodemailer</span>
-              <span>Vercel</span>
+          <div class="proj-body">
+            <div class="proj-title">Student Registration System</div>
+            <p class="proj-desc">A web-based system for managing student registration, enrollment, courses, and subject records.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Next.js</span>
+              <span class="proj-tag">React</span>
+              <span class="proj-tag">TypeScript</span>
+              <span class="proj-tag">Tailwind</span>
+              <span class="proj-tag">PostgreSQL</span>
+              <span class="proj-tag">Nodemailer</span>
             </div>
-            <div class="project-links">
-              <a href="https://student-registration-system-nine-topaz.vercel.app/" target="_blank" class="btn-project">View Project</a>
+            <div class="proj-footer">
+              <a href="https://student-registration-system-nine-topaz.vercel.app/" target="_blank" class="btn-proj">View Project</a>
             </div>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-image-wrapper">
-            <img src="images/pos-preview.png" alt="POS & Inventory System" class="project-image">
+        <div class="proj-card reveal reveal-delay-1">
+          <div class="proj-image-wrap">
+            <img src="images/pos-preview.png" alt="POS & Inventory System">
           </div>
-          <div class="project-card-body">
-            <h3>POS & Inventory System</h3>
-            <p>Sales transactions, inventory tracking, product management, and reporting system for retail businesses.</p>
-            <div class="project-tags">
-              <span>Python</span>
-              <span>Flask</span>
-              <span>Jinja Templates</span>
-              <span>HTML / CSS</span>
-              <span>Neon Database</span>
-              <span>Render</span>
+          <div class="proj-body">
+            <div class="proj-title">POS & Inventory System</div>
+            <p class="proj-desc">Sales transactions, inventory tracking, product management, and reporting system for retail businesses.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">Flask</span>
+              <span class="proj-tag">Jinja</span>
+              <span class="proj-tag">HTML/CSS</span>
+              <span class="proj-tag">Neon DB</span>
+              <span class="proj-tag">Render</span>
             </div>
-            <div class="project-links">
-              <a href="https://python-pos-system-jzau.onrender.com" target="_blank" class="btn-project">View Project</a>
+            <div class="proj-footer">
+              <a href="https://python-pos-system-jzau.onrender.com" target="_blank" class="btn-proj">View Project</a>
             </div>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-image-wrapper">
-             <img src="images/hr-ems.png" alt="HR Employee Management System class="project-image">
-            <div class="project-screenshot-placeholder" aria-label="HR Employee Management System screenshot">
-              <div class="screenshot-browser-bar">
-                <span class="browser-dot dot-red"></span>
-                <span class="browser-dot dot-yellow"></span>
-                <span class="browser-dot dot-green"></span>
-                <span class="browser-url">hr-management-sage.vercel.app</span>
-              </div>
-              <div class="screenshot-ui">
-                <div class="screenshot-sidebar">
-                  <div class="ss-sidebar-item ss-active"></div>
-                  <div class="ss-sidebar-item"></div>
-                  <div class="ss-sidebar-item"></div>
-                  <div class="ss-sidebar-item"></div>
-                </div>
-                <div class="screenshot-main">
-                  <div class="ss-header-row">
-                    <div class="ss-title-block"></div>
-                    <div class="ss-btn-block"></div>
-                  </div>
-                  <div class="ss-stat-row">
-                    <div class="ss-stat-card"></div>
-                    <div class="ss-stat-card"></div>
-                    <div class="ss-stat-card"></div>
-                  </div>
-                  <div class="ss-table">
-                    <div class="ss-table-row ss-table-header"></div>
-                    <div class="ss-table-row"></div>
-                    <div class="ss-table-row"></div>
-                    <div class="ss-table-row"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="proj-card reveal reveal-delay-2">
+          <div class="proj-image-wrap">
+            <img src="images/hr-ems.png" alt="HR Employee Management System">
           </div>
-          <div class="project-card-body">
-            <h3>HR Employee Management</h3>
-            <p>A full-featured HR system for managing employees, departments, payroll, and attendance records.</p>
-            <div class="project-tags">
-              <span>Next.js</span>
-              <span>React</span>
-              <span>TypeScript</span>
-              <span>Tailwind CSS</span>
-              <span>PostgreSQL</span>
-              <span>Vercel</span>
+          <div class="proj-body">
+            <div class="proj-title">HR Employee Management</div>
+            <p class="proj-desc">A full-featured HR system for managing employees, departments, payroll, and attendance records.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Next.js</span>
+              <span class="proj-tag">React</span>
+              <span class="proj-tag">TypeScript</span>
+              <span class="proj-tag">Tailwind</span>
+              <span class="proj-tag">PostgreSQL</span>
             </div>
-            <div class="project-links">
-              <a href="https://hr-management-sage.vercel.app/" target="_blank" class="btn-project">View Project</a>
+            <div class="proj-footer">
+              <a href="https://hr-management-sage.vercel.app/" target="_blank" class="btn-proj">View Project</a>
             </div>
           </div>
         </div>
@@ -350,145 +374,131 @@
     </div>
   </section>
 
-  <!-- ── Contact (Formspree) ── -->
-  <section id="contact" class="section section-dark">
-    <div class="container contact-container">
-      <div class="section-header">
-        <h2>Contact Me</h2>
-        <p>If you'd like to discuss an opportunity or collaborate on a project, feel free to send a message.</p>
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-label">Contact</span>
       </div>
+      <h2 class="section-title">Let's work together</h2>
+      <p class="section-desc">If you'd like to discuss an opportunity or collaborate on a project, feel free to send a message.</p>
 
-      <!-- Replace YOUR_FORM_ID with your actual Formspree ID -->
-      <form class="contact-form" id="contact-form" action="https://formspree.io/f/mqeojadw" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" id="submit-btn">Send Message</button>
-        <p class="form-status" id="form-status"></p>
-      </form>
+      <div class="contact-wrap reveal">
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/mqeojadw" method="POST">
+          <input type="text"  name="name"    placeholder="Your Name"    required />
+          <input type="email" name="email"   placeholder="Your Email"   required />
+          <textarea           name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" id="submit-btn">Send Message</button>
+          <p class="form-status" id="form-status"></p>
+        </form>
+      </div>
     </div>
   </section>
 
-  <!-- ── Footer ── -->
+  <!-- ── FOOTER ── -->
   <footer class="footer">
-    <div class="container footer-container">
+    <div class="container footer-inner">
       <p class="footer-logo">PJ</p>
-      <p class="footer-text">© 2025 Paulo C. Jimena. All rights reserved.</p>
-      <div class="footer-socials">
-        <a href="https://linkedin.com/in/yourusername" target="_blank" class="footer-social-link">LinkedIn</a>
-        <a href="mailto:your@email.com" class="footer-social-link">Email</a>
+      <p class="footer-copy">© 2025 Paulo C. Jimena. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        <a href="mailto:your@email.com">Email</a>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
   <script>
-    // ── Hamburger menu ──
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      navLinks.classList.toggle('open');
+  // ── Hamburger ──
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+  document.querySelectorAll('.nav-link').forEach(l =>
+    l.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+    })
+  );
+
+  // ── Theme toggle ──
+  const themeBtn   = document.getElementById('theme-toggle');
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') { document.body.classList.add('light'); themeBtn.textContent = '☀️'; }
+  themeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('light');
+    const isLight = document.body.classList.contains('light');
+    themeBtn.textContent = isLight ? '☀️' : '🌙';
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  });
+
+  // ── Scroll reveal ──
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+  // ── Stats counter ──
+  function animateCounters() {
+    document.querySelectorAll('.stat-number').forEach(el => {
+      const target = +el.dataset.target;
+      const step   = target / (1500 / 16);
+      let cur = 0;
+      const t = setInterval(() => {
+        cur += step;
+        if (cur >= target) { el.textContent = target; clearInterval(t); }
+        else el.textContent = Math.floor(cur);
+      }, 16);
     });
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        hamburger.classList.remove('open');
-        navLinks.classList.remove('open');
-      });
+  }
+
+  // ── Skill bars ──
+  function animateSkills() {
+    document.querySelectorAll('.skill-fill').forEach(bar => {
+      bar.style.width = bar.dataset.width + '%';
     });
+  }
 
-    // ── Stats counter animation ──
-    function animateCounters() {
-      document.querySelectorAll('.stat-number').forEach(el => {
-        const target = parseInt(el.dataset.target);
-        const duration = 1500;
-        const step = target / (duration / 16);
-        let current = 0;
-        const timer = setInterval(() => {
-          current += step;
-          if (current >= target) {
-            el.textContent = target;
-            clearInterval(timer);
-          } else {
-            el.textContent = Math.floor(current);
-          }
-        }, 16);
+  const statsObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { animateCounters(); statsObs.unobserve(e.target); } });
+  }, { threshold: 0.3 });
+  statsObs.observe(document.querySelector('.stats-strip'));
+
+  const skillsObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { animateSkills(); skillsObs.unobserve(e.target); } });
+  }, { threshold: 0.2 });
+  skillsObs.observe(document.getElementById('skill-bars'));
+
+  // ── Formspree contact ──
+  const form      = document.getElementById('contact-form');
+  const status    = document.getElementById('form-status');
+  const submitBtn = document.getElementById('submit-btn');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    submitBtn.textContent = 'Sending…';
+    submitBtn.disabled = true;
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST', body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
       });
-    }
-
-    // ── Skill bar animation ──
-    function animateSkillBars() {
-      document.querySelectorAll('.bar-fill').forEach(bar => {
-        bar.style.width = bar.dataset.width + '%';
-      });
-    }
-
-    // ── Intersection Observer — trigger animations on scroll ──
-    const statsSection = document.querySelector('.stats-section');
-    const skillsSection = document.getElementById('skills');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          if (entry.target === statsSection) animateCounters();
-          if (entry.target === skillsSection) animateSkillBars();
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.3 });
-
-    observer.observe(statsSection);
-    observer.observe(skillsSection);
-
-    // ── Formspree AJAX submit ──
-    const form = document.getElementById('contact-form');
-    const status = document.getElementById('form-status');
-    const submitBtn = document.getElementById('submit-btn');
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      submitBtn.textContent = 'Sending...';
-      submitBtn.disabled = true;
-
-      try {
-        const res = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { 'Accept': 'application/json' }
-        });
-
-        if (res.ok) {
-          status.textContent = '✓ Message sent! I will get back to you soon.';
-          status.className = 'form-status success';
-          form.reset();
-        } else {
-          status.textContent = '✗ Something went wrong. Please try again.';
-          status.className = 'form-status error';
-        }
-      } catch {
-        status.textContent = '✗ Network error. Please try again.';
+      if (res.ok) {
+        status.textContent = '✓ Message sent! I will get back to you soon.';
+        status.className = 'form-status success';
+        form.reset();
+      } else {
+        status.textContent = '✗ Something went wrong. Please try again.';
         status.className = 'form-status error';
       }
-
-      submitBtn.textContent = 'Send Message';
-      submitBtn.disabled = false;
-    });
-    // ── Dark / Light mode toggle ──
-    const themeToggle = document.getElementById('theme-toggle');
-    const savedTheme = localStorage.getItem('theme');
-
-    // Apply saved theme on load
-    if (savedTheme === 'light') {
-      document.body.classList.add('light');
-      themeToggle.textContent = '☀️';
+    } catch {
+      status.textContent = '✗ Network error. Please try again.';
+      status.className = 'form-status error';
     }
-
-    themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('light');
-      const isLight = document.body.classList.contains('light');
-      themeToggle.textContent = isLight ? '☀️' : '🌙';
-      localStorage.setItem('theme', isLight ? 'light' : 'dark');
-    });
+    submitBtn.textContent = 'Send Message';
+    submitBtn.disabled = false;
+  });
   </script>
 </body>
 </html>
