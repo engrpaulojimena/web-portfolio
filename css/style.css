@@ -1036,27 +1036,27 @@ body.light .orbit-icon.accent2 { border-color: rgba(109,40,217,0.3); }
   letter-spacing: 0.02em;
 }
 
-/* Outline icon button (replaces old btn-proj) */
+/* Try It button */
 .btn-proj-outline {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 12px;
+  padding: 7px 14px;
   border-radius: var(--radius-sm);
   font-size: 0.78rem;
   font-weight: 600;
-  color: var(--text-2);
-  border: 1px solid var(--border-2);
-  background: transparent;
+  color: #fff;
+  background: var(--grad-accent);
+  border: none;
   white-space: nowrap;
   flex-shrink: 0;
+  box-shadow: 0 2px 12px var(--accent-glow);
   transition: all 0.2s;
 }
 .btn-proj-outline:hover {
-  border-color: var(--accent);
-  color: var(--text-1);
-  background: rgba(99,102,241,0.08);
+  opacity: 0.88;
   transform: translateY(-1px);
+  box-shadow: 0 4px 20px var(--accent-glow);
 }
 
 /* ── CONTACT ── */
