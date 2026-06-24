@@ -441,7 +441,7 @@ body.light .social-chip img { filter: brightness(0) invert(0.3); }
   50%       { transform: rotate(var(--angle)) translateX(var(--r)) rotate(calc(-1 * var(--angle))) translateY(-8px); }
 }
 .ring-1 .orbit-icon { --r: 170px; }
-.ring-2 .orbit-icon { --r: 240px; }
+.ring-2 .orbit-icon { --r: 300px; }
 
 .orbit-icon:hover {
   color: var(--text-1);
