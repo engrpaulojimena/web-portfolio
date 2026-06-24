@@ -316,10 +316,16 @@ img { display: block; max-width: 100%; }
   gap: 8px;
   transition: all 0.2s;
 }
+.btn-secondary svg {
+  transition: transform 0.2s;
+}
 .btn-secondary:hover {
   border-color: var(--accent);
   background: rgba(99,102,241,0.08);
   transform: translateY(-2px);
+}
+.btn-secondary:hover svg {
+  transform: translateY(2px);
 }
 
 .hero-socials {
