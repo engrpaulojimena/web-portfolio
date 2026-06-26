@@ -82,34 +82,64 @@
         </div>
       </div>
 
-      <!-- Right: Image with floating skill tags -->
+      <!-- Right: Image + floating caption + skills sidebar -->
       <div class="hero-visual">
 
-        <div class="orbit-ring ring-1">
-          <span class="orbit-icon" style="--angle:0deg">VB.NET</span>
-          <span class="orbit-icon accent" style="--angle:60deg">MS SQL Server</span>
-          <span class="orbit-icon" style="--angle:120deg">Crystal Reports</span>
-          <span class="orbit-icon accent2" style="--angle:180deg">Python / Flask</span>
-          <span class="orbit-icon" style="--angle:240deg">PostgreSQL</span>
-          <span class="orbit-icon accent" style="--angle:300deg">Next.js</span>
+        <div class="hero-image-wrap">
+          <div class="hero-img-frame">
+            <img src="images/hero.png" alt="Paulo C. Jimena">
+          </div>
+          <div class="hero-caption-card">
+            <span class="hero-caption-icon">✦</span>
+            <div>
+              <strong>Clean Code</strong>
+              <span>Scalable Solutions</span>
+              <span>Real Results</span>
+            </div>
+          </div>
         </div>
 
-        <div class="orbit-ring ring-2">
-          <span class="orbit-icon accent2" style="--angle:0deg">React</span>
-          <span class="orbit-icon" style="--angle:51deg">TypeScript</span>
-          <span class="orbit-icon accent" style="--angle:102deg">Tailwind</span>
-          <span class="orbit-icon" style="--angle:153deg">HTML / CSS / JS</span>
-          <span class="orbit-icon accent2" style="--angle:204deg">Node.js</span>
-          <span class="orbit-icon" style="--angle:255deg">Git / GitHub</span>
-          <span class="orbit-icon accent" style="--angle:306deg">Vercel</span>
-        </div>
+        <aside class="skills-sidecard">
+          <div class="skills-sidecard-head">
+            <span class="skills-sidecard-icon">&lt;/&gt;</span>
+            <h3>What I work with</h3>
+          </div>
+          <ul class="skills-sidecard-list">
+            <li><span class="sk-ico sk-next">N</span>Next.js</li>
+            <li><span class="sk-ico sk-react">⚛</span>React</li>
+            <li><span class="sk-ico sk-ts">TS</span>TypeScript</li>
+            <li><span class="sk-ico sk-node">⬢</span>Node.js</li>
+            <li><span class="sk-ico sk-py">🐍</span>Python / Flask</li>
+            <li><span class="sk-ico sk-pg">🐘</span>PostgreSQL</li>
+            <li><span class="sk-ico sk-sql">🗄</span>MS SQL Server</li>
+          </ul>
+          <a href="#skills" class="skills-sidecard-more">See all skills →</a>
+        </aside>
 
-        <!-- Center image -->
-        <div class="hero-img-frame">
-          <img src="images/hero.png" alt="Paulo C. Jimena">
-        </div>
+      </div>
 
-        <!-- Mobile fallback removed: orbit now scales down and is used on all sizes -->
+      <!-- Bottom: quick feature highlights -->
+      <div class="hero-features">
+        <div class="hero-feature-card">
+          <span class="hero-feature-icon">&lt;/&gt;</span>
+          <h4>Clean Code</h4>
+          <p>Maintainable and well-structured code for long-term success.</p>
+        </div>
+        <div class="hero-feature-card">
+          <span class="hero-feature-icon">⚡</span>
+          <h4>Performance</h4>
+          <p>Optimized applications for speed and efficiency.</p>
+        </div>
+        <div class="hero-feature-card">
+          <span class="hero-feature-icon">◈</span>
+          <h4>Scalable</h4>
+          <p>Built to grow with your business and handle more.</p>
+        </div>
+        <div class="hero-feature-card">
+          <span class="hero-feature-icon">🛡</span>
+          <h4>Reliable</h4>
+          <p>Strong, secure, and dependable systems you can trust.</p>
+        </div>
       </div>
 
     </div>
