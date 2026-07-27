@@ -3,602 +3,610 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Paulo C. Jimena | Full Stack Developer</title>
-  <meta name="description" content="Portfolio of Paulo C. Jimena, Full Stack Developer specializing in Next.js, React, Python, and PostgreSQL." />
+  <meta name="theme-color" content="#0b0d12" />
+  <title>Paulo C. Jimena — Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Paulo C. Jimena, a Full Stack Developer building modern business systems, web applications, and database-driven products." />
   <link rel="icon" type="image/png" href="icons/myicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <div class="page-noise" aria-hidden="true"></div>
+  <div class="cursor-aura" id="cursor-aura" aria-hidden="true"></div>
 
-  <!-- ── NAVBAR ── -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="#home" class="logo">PJ</a>
+  <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+    <div class="shell nav-inner">
+      <a class="brand" href="#home" aria-label="Paulo Jimena home">
+        <span class="brand-mark">PJ</span>
+        <span class="brand-copy">
+          <strong>Paulo Jimena</strong>
+          <small>Full-stack systems developer</small>
+        </span>
+      </a>
+
       <ul class="nav-links" id="nav-links">
-        <li><a href="#home"       class="nav-link">Home</a></li>
-        <li><a href="#about"      class="nav-link">About</a></li>
-        <li><a href="#skills"     class="nav-link">Skills</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects"   class="nav-link">Projects</a></li>
-        <li><a href="#contact"    class="nav-link">Contact</a></li>
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Stack</a></li>
+        <li><a class="nav-link" href="#projects">Work</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
-      <div class="nav-right">
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
-        <a href="resume.pdf" class="btn-resume" target="_blank">Resume</a>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
+
+      <div class="nav-actions">
+        <a class="nav-resume" href="#contact"><span>Hire Me</span><b aria-hidden="true">↗</b></a>
+        <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation" aria-controls="nav-links" aria-expanded="false">
+          <span></span><span></span>
         </button>
       </div>
     </div>
   </nav>
 
-  <!-- ── HERO ── -->
-  <header id="home" class="hero-section">
-    <div class="container hero-layout">
+  <main>
+    <header class="hero" id="home">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-aurora hero-aurora-one" aria-hidden="true"></div>
+      <div class="hero-aurora hero-aurora-two" aria-hidden="true"></div>
 
-      <!-- Left: Text -->
-      <div class="hero-text">
-        <div class="hero-badge">
-          <span class="hero-badge-dot"></span>
-          Available for opportunities
-        </div>
-
-        <h1 class="hero-name">Paulo C.<br>Jimena</h1>
-
-        <div class="hero-roles">
-          <span>Full Stack Dev</span>
-          <span class="role-sep">/</span>
-          <span>Next.js &amp; React</span>
-          <span class="role-sep">/</span>
-          <span>Python</span>
-          <span class="role-sep">/</span>
-          <span>PostgreSQL</span>
-        </div>
-
-        <p class="hero-intro">
-          I build modern web applications and business systems with clean design,
-          scalable architecture, and practical real-world functionality.
-        </p>
-
-        <div class="hero-cta">
-          <a href="#projects" class="btn-primary">
-            View Projects
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="resume.pdf" class="btn-secondary" target="_blank">
-            Download Resume
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v8M3.5 6l3.5 3.5L10.5 6M2 12h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </div>
-
-        <div class="hero-socials">
-          <a href="https://profile.indeed.com/p/pauloj-h44309j" target="_blank" class="social-chip">
-            <img src="icons/indeed-svgrepo-com.svg" alt=""> Indeed
-          </a>
-          <a href="mailto:engrpaulojimena.gmail.com" class="social-chip">
-            <img src="icons/email.svg" alt=""> Email
-          </a>
-        </div>
-      </div>
-
-      <!-- Right: Image + floating caption + skills sidebar -->
-      <div class="hero-visual">
-
-        <div class="hero-image-wrap">
-          <div class="hero-img-frame">
-            <img src="images/hero.png" alt="Paulo C. Jimena">
+      <div class="shell hero-layout">
+        <div class="hero-copy">
+          <div class="availability-pill load-reveal"><span></span> Open to freelance and full-time opportunities · Philippines</div>
+          <div class="hero-heading-wrap">
+            <p class="hero-overline load-reveal delay-1">Full-stack developer · business systems · database solutions</p>
+            <h1 class="hero-title load-reveal delay-1">
+              <span class="hero-line">I develop</span>
+              <span class="hero-line hero-line-accent">reliable software</span>
+              <span class="hero-line hero-line-small">for business operations and growing teams.</span>
+            </h1>
           </div>
-          <div class="hero-caption-card">
-            <span class="hero-caption-icon">✦</span>
-            <div>
-              <strong>Clean Code</strong>
-              <span>Scalable Solutions</span>
-              <span>Real Results</span>
+          <p class="hero-summary load-reveal delay-2">I’m Paulo Jimena, a full-stack developer with professional experience in enterprise and database-driven systems. I design and build responsive applications that simplify workflows, protect business data, and remain maintainable in production.</p>
+          <div class="hero-actions load-reveal delay-3">
+            <a class="button button-primary magnetic" href="#projects">View selected projects <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4"/></svg></a>
+            <a class="button button-ghost magnetic" href="resume.pdf" target="_blank" rel="noopener">View professional résumé <span>↗</span></a>
+          </div>
+          <div class="hero-proof load-reveal delay-4">
+            <div><strong>3+ Years</strong><span>Professional software development</span></div>
+            <div><strong>10+ Systems</strong><span>Web and business applications</span></div>
+            <div><strong>Production-Ready</strong><span>Database, debugging, and system support</span></div>
+          </div>
+        </div>
+
+        <div class="hero-portrait load-reveal delay-2">
+          <div class="portrait-shell portrait-shell-clean">
+            <div class="portrait-stage portrait-stage-clean tilt-surface" data-tilt="1.3">
+              <div class="portrait-topbar">
+                <span class="portrait-chip portrait-chip-primary">Available for work</span>
+                <span class="portrait-chip">Systems / Full-stack</span>
+              </div>
+              <img src="images/hero.png" alt="Paulo C. Jimena working on a laptop" loading="eager">
+              <div class="portrait-gradient" aria-hidden="true"></div>
+              <div class="portrait-bottomcard">
+                <strong>Designing dependable digital products</strong>
+                <p>Specialized in modern dashboards, internal platforms, and responsive business systems built with clarity, structure, and long-term usability in mind.</p>
+                <div class="portrait-bottom-tags">
+                  <span>Responsive architecture</span>
+                  <span>Data-driven decisions</span>
+                  <span>Professional execution</span>
+                </div>
+              </div>
+            </div>
+            <div class="portrait-meta-grid">
+              <article class="portrait-panel">
+                <span class="portrait-panel-label">Focus</span>
+                <strong>Business platforms</strong>
+                <p>Dashboards, workflows, and management systems designed for real business operations.</p>
+              </article>
+              <article class="portrait-panel">
+                <span class="portrait-panel-label">Core stack</span>
+                <strong>React · Next.js · SQL</strong>
+                <p>Responsive interfaces supported by structured backend logic and reliable database design.</p>
+              </article>
+              <article class="portrait-panel portrait-panel-accent">
+                <span class="portrait-panel-label">Availability</span>
+                <strong>Open for collaboration</strong>
+                <p>Available for selected freelance, contract, and full-time software opportunities.</p>
+              </article>
             </div>
           </div>
         </div>
+      </div>
 
-        <aside class="skills-sidecard">
-          <div class="skills-sidecard-head">
-            <span class="skills-sidecard-icon">&lt;/&gt;</span>
-            <h3>What I work with</h3>
+      <div class="hero-ribbon" aria-label="Core technologies">
+        <div class="hero-ribbon-track">
+          <div class="hero-ribbon-set" aria-hidden="false">
+            <span>Next.js</span><i>✦</i><span>TypeScript</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>VB.NET</span><i>✦</i><span>SQL Server</span><i>✦</i><span>Python</span><i>✦</i><span>React</span><i>✦</i>
           </div>
-          <ul class="skills-sidecard-list">
-            <li><span class="sk-ico sk-next">N</span>Next.js</li>
-            <li><span class="sk-ico sk-react">⚛</span>React</li>
-            <li><span class="sk-ico sk-ts">TS</span>TypeScript</li>
-            <li><span class="sk-ico sk-node">⬢</span>Node.js</li>
-            <li><span class="sk-ico sk-py">🐍</span>Python / Flask</li>
-            <li><span class="sk-ico sk-pg">🐘</span>PostgreSQL</li>
-            <li><span class="sk-ico sk-sql">🗄</span>MS SQL Server</li>
-          </ul>
-          <a href="#skills" class="skills-sidecard-more">See all skills →</a>
+          <div class="hero-ribbon-set" aria-hidden="true">
+            <span>Next.js</span><i>✦</i><span>TypeScript</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>VB.NET</span><i>✦</i><span>SQL Server</span><i>✦</i><span>Python</span><i>✦</i><span>React</span><i>✦</i>
+          </div>
+        </div>
+      </div>
+
+      <div class="shell home-panels">
+        <section class="home-projects">
+          <div class="panel-heading"><div><span>Quick access</span><h2>Selected systems</h2></div><a href="#projects">All case studies ↘</a></div>
+          <div class="mini-project-grid">
+            <a class="mini-project" href="#resort-showcase"><img src="images/resort/dashboard.webp" alt="Resort Management dashboard"><div><small>01 · Hospitality</small><strong>Resort Management</strong><span>Reservations, rooms, payments, guests, and operational reporting.</span></div><b>↘</b></a>
+            <a class="mini-project" href="#pc-ecommerce-showcase"><img src="images/pc-ecommerce/dashboard.webp" alt="PCJ PC ecommerce admin dashboard"><div><small>02 · Commerce</small><strong>PC E-Commerce</strong><span>Catalog, inventory, checkout, payment, and order management.</span></div><b>↘</b></a>
+            <a class="mini-project" href="#student-management-showcase"><img src="images/student-registration/dashboard.webp" alt="Student Management System dashboard"><div><small>03 · Education</small><strong>Student Management</strong><span>Students, courses, enrollments, users, and audit history.</span></div><b>↘</b></a>
+          </div>
+        </section>
+        <aside class="home-stack">
+          <div class="panel-heading"><div><span>Toolkit</span><h2>Core stack</h2></div></div>
+          <div class="stack-list"><span><i>01</i><b>Next.js / React</b></span><span><i>02</i><b>TypeScript</b></span><span><i>03</i><b>PostgreSQL</b></span><span><i>04</i><b>SQL Server</b></span><span><i>05</i><b>VB.NET / Python</b></span></div>
         </aside>
-
+        <aside class="home-about">
+          <div class="about-block"><span class="panel-label">Approach</span><h2>Build for the workflow, not only the screen.</h2><p>I translate complex operational requirements into maintainable software with clear interfaces and dependable data.</p></div>
+          <div class="about-block contact-mini"><span class="panel-label">Let’s talk</span><a href="mailto:engrpaulojimena@gmail.com">engrpaulojimena@gmail.com <b>↗</b></a><span>Based in the Philippines</span></div>
+        </aside>
       </div>
+    </header>
 
-      <!-- Bottom: quick feature highlights -->
-      <div class="hero-features">
-        <div class="hero-feature-card">
-          <span class="hero-feature-icon">&lt;/&gt;</span>
-          <h4>Clean Code</h4>
-          <p>Maintainable and well-structured code for long-term success.</p>
-        </div>
-        <div class="hero-feature-card">
-          <span class="hero-feature-icon">⚡</span>
-          <h4>Performance</h4>
-          <p>Optimized applications for speed and efficiency.</p>
-        </div>
-        <div class="hero-feature-card">
-          <span class="hero-feature-icon">◈</span>
-          <h4>Scalable</h4>
-          <p>Built to grow with your business and handle more.</p>
-        </div>
-        <div class="hero-feature-card">
-          <span class="hero-feature-icon">🛡</span>
-          <h4>Reliable</h4>
-          <p>Strong, secure, and dependable systems you can trust.</p>
-        </div>
-      </div>
 
-    </div>
-  </header>
-
-  <!-- ── STATS ── -->
-  <section class="stats-strip">
-    <div class="container">
-      <div class="stats-row">
-        <div class="stat-item">
-          <div class="stat-num">
-            <span class="stat-number" data-target="3">0</span>
-            <span class="stat-sup">+</span>
+    <section class="section about" id="about">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div class="section-index">02</div>
+          <div>
+            <span class="section-kicker">About &amp; capabilities</span>
+            <h2>Engineering clarity into every layer.</h2>
           </div>
-          <p class="stat-label">Years of Experience</p>
-        </div>
-        <div class="stat-item">
-          <div class="stat-num">
-            <span class="stat-number" data-target="10">0</span>
-            <span class="stat-sup">+</span>
-          </div>
-          <p class="stat-label">Projects Built</p>
-        </div>
-        <div class="stat-item">
-          <div class="stat-num">
-            <span class="stat-number" data-target="12">0</span>
-            <span class="stat-sup">+</span>
-          </div>
-          <p class="stat-label">Technologies Used</p>
-        </div>
-        <div class="stat-item">
-          <div class="stat-num">
-            <span class="stat-number" data-target="100">0</span>
-            <span class="stat-sup">%</span>
-          </div>
-          <p class="stat-label">Commitment to Quality</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── ABOUT ── -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-left reveal">
-          <div class="section-eyebrow">
-            <span class="eyebrow-line"></span>
-            <span class="eyebrow-label">About Me</span>
-          </div>
-          <h2 class="section-title">Who I am</h2>
-          <p class="section-desc">Turning complex business requirements into clean, maintainable software.</p>
-          <p>
-            I'm a Full Stack Developer focused on building business applications and
-            web-based systems. With experience in insurance software at Moylan's, I understand
-            how to build systems that handle real complexity — not just demos.
-          </p>
-          <p>
-            I work across the full stack: from database schema design to pixel-perfect UIs,
-            using Next.js, React, Python/Flask, and PostgreSQL as my primary tools.
-          </p>
         </div>
 
-        <div class="about-cards">
-          <div class="about-card reveal reveal-delay-1">
-            <span class="about-card-icon">🧹</span>
-            <h3>Clean Code</h3>
-            <p>Writing maintainable and scalable code is one of my top priorities.</p>
+        <div class="about-layout">
+          <div class="about-intro reveal">
+            <p class="lead">
+              I bridge the gap between <strong>business requirements</strong> and
+              <strong>working software</strong>—turning real operational problems into
+              systems people can confidently use.
+            </p>
+            <p>
+              My professional background in insurance software shaped how I approach development:
+              understand the workflow, trace the root cause, protect the data, and build a solution
+              that remains maintainable after deployment.
+            </p>
+            <a class="text-link" href="#experience">See professional experience <span>↘</span></a>
           </div>
-          <div class="about-card reveal reveal-delay-2">
-            <span class="about-card-icon">⚡</span>
-            <h3>Performance</h3>
-            <p>Building fast and optimized applications for better user experience.</p>
+
+          <div class="capability-grid">
+            <article class="capability-card reveal spotlight-card">
+              <span class="capability-number">01</span>
+              <div class="capability-icon">⌘</div>
+              <h3>Business Systems</h3>
+              <p>Workflow-focused applications for accounting, operations, booking, HR, enrollment, and retail.</p>
+            </article>
+            <article class="capability-card reveal spotlight-card delay-1">
+              <span class="capability-number">02</span>
+              <div class="capability-icon">◫</div>
+              <h3>Full Stack Products</h3>
+              <p>Responsive interfaces, secure application logic, APIs, authentication, and cloud deployment.</p>
+            </article>
+            <article class="capability-card reveal spotlight-card delay-2">
+              <span class="capability-number">03</span>
+              <div class="capability-icon">⟲</div>
+              <h3>Data &amp; Debugging</h3>
+              <p>Database design, stored procedures, production issue tracing, data fixes, and performance work.</p>
+            </article>
+            <article class="capability-card capability-card-accent reveal spotlight-card delay-3">
+              <span class="capability-number">04</span>
+              <div class="capability-icon">↗</div>
+              <h3>Practical Delivery</h3>
+              <p>Solutions shaped around real users, clear communication, and measurable business outcomes.</p>
+            </article>
           </div>
-          <div class="about-card reveal reveal-delay-3">
-            <span class="about-card-icon">🔧</span>
-            <h3>Problem Solving</h3>
-            <p>Turning business needs into practical systems and efficient workflows.</p>
-          </div>
-          <div class="about-card reveal reveal-delay-4">
-            <span class="about-card-icon">🤝</span>
-            <h3>Collaboration</h3>
-            <p>Working effectively with teams through communication and shared goals.</p>
-          </div>
+        </div>
+
+        <div class="metrics-grid reveal">
+          <div class="metric"><strong data-counter="3">0</strong><span>+ years<br />experience</span></div>
+          <div class="metric"><strong data-counter="10">0</strong><span>+ systems<br />and projects</span></div>
+          <div class="metric"><strong data-counter="12">0</strong><span>+ technologies<br />used</span></div>
+          <div class="metric"><strong data-counter="100">0</strong><span>% ownership<br />of delivery</span></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── SKILLS ── -->
-  <section id="skills" class="section section-alt">
-    <div class="container">
-      <div class="section-eyebrow">
-        <span class="eyebrow-line"></span>
-        <span class="eyebrow-label">Technical Skills</span>
-      </div>
-      <h2 class="section-title">What I work with</h2>
-      <p class="section-desc">Technologies and tools I use to build responsive frontends, scalable APIs, and database-driven systems.</p>
-
-      <div class="skills-split">
-        <div class="skill-list" id="skill-bars">
-
-          <div class="skill-row reveal">
-            <div class="skill-meta"><span class="skill-name">Vb.Net</span><span class="skill-pct">90%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+    <section class="section stack-section" id="skills">
+      <div class="shell">
+        <div class="stack-top">
+          <div class="section-heading reveal">
+            <div class="section-index">03</div>
+            <div>
+              <span class="section-kicker">Technical stack</span>
+              <h2>Tools chosen for the problem—not the trend.</h2>
+            </div>
           </div>
-
-
-          <div class="skill-row reveal">
-            <div class="skill-meta"><span class="skill-name">Microsoft SQL Server</span><span class="skill-pct">90%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
-          </div>
-
-          <div class="skill-row reveal">
-            <div class="skill-meta"><span class="skill-name">Next.js / React</span><span class="skill-pct">85%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
-          </div>
-          <div class="skill-row reveal reveal-delay-1">
-            <div class="skill-meta"><span class="skill-name">TypeScript</span><span class="skill-pct">78%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="78"></div></div>
-          </div>
-          <div class="skill-row reveal reveal-delay-2">
-            <div class="skill-meta"><span class="skill-name">Python / Flask</span><span class="skill-pct">80%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
-          </div>
-          <div class="skill-row reveal reveal-delay-3">
-            <div class="skill-meta"><span class="skill-name">PostgreSQL</span><span class="skill-pct">82%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="82"></div></div>
-          </div>
-          <div class="skill-row reveal reveal-delay-4">
-            <div class="skill-meta"><span class="skill-name">Tailwind CSS</span><span class="skill-pct">80%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
-          </div>
-          <div class="skill-row reveal reveal-delay-4">
-            <div class="skill-meta"><span class="skill-name">HTML / CSS / JavaScript</span><span class="skill-pct">88%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
-          </div>
+          <p class="stack-note reveal">A balanced toolkit for modern web development and established enterprise systems.</p>
         </div>
 
-        <div class="tools-section reveal">
-          <p class="tools-label">// Tools & Others</p>
-          <div class="tools-grid">
-            <span class="tool-tag">Visual Studio</span>
-            <span class="tool-tag">Microsoft SQL Server</span>
-            <span class="tool-tag">Node.js</span>
-            <span class="tool-tag">Recharts</span>
-            <span class="tool-tag">bcryptjs</span>
-            <span class="tool-tag">Git</span>
-            <span class="tool-tag">GitHub</span>
-            <span class="tool-tag">Vercel</span>
-            <span class="tool-tag">Render</span>
-            <span class="tool-tag">Neon DB</span>
-            <span class="tool-tag">VS Code</span>
+        <div class="stack-board reveal">
+          <div class="stack-column stack-column-primary">
+            <span class="stack-label">Modern web</span>
+            <h3>Product engineering</h3>
+            <div class="stack-pills">
+              <span>Next.js</span><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>Node.js</span><span>REST APIs</span>
+            </div>
+            <div class="stack-meter"><span style="--level: 88%"></span></div>
+          </div>
+
+          <div class="stack-column">
+            <span class="stack-label">Backend &amp; data</span>
+            <h3>Reliable foundations</h3>
+            <div class="stack-pills">
+              <span>PostgreSQL</span><span>MS SQL Server</span><span>Python</span><span>Flask</span><span>Drizzle ORM</span><span>Stored Procedures</span>
+            </div>
+            <div class="stack-meter"><span style="--level: 90%"></span></div>
+          </div>
+
+          <div class="stack-column">
+            <span class="stack-label">Enterprise &amp; delivery</span>
+            <h3>Production experience</h3>
+            <div class="stack-pills">
+              <span>VB.NET</span><span>DevExpress</span><span>Crystal Reports</span><span>Git</span><span>Vercel</span><span>Render</span>
+            </div>
+            <div class="stack-meter"><span style="--level: 86%"></span></div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── EXPERIENCE ── -->
-  <section id="experience" class="section">
-    <div class="container">
-      <div class="section-eyebrow">
-        <span class="eyebrow-line"></span>
-        <span class="eyebrow-label">Experience</span>
+    <section class="section experience" id="experience">
+      <div class="shell">
+        <div class="experience-layout">
+          <div class="experience-heading reveal">
+            <div class="section-heading">
+              <div class="section-index">04</div>
+              <div>
+                <span class="section-kicker">Professional experience</span>
+                <h2>Built in production, not only in tutorials.</h2>
+              </div>
+            </div>
+            <p>Working on real insurance systems taught me to think beyond code: impact, accuracy, traceability, and user trust all matter.</p>
+            <a class="button button-dark" href="resume.pdf" target="_blank" rel="noopener">View full résumé ↗</a>
+          </div>
+
+          <div class="career-track">
+            <article class="career-item reveal">
+              <div class="career-marker"><span></span></div>
+              <div class="career-card spotlight-card">
+                <div class="career-meta">
+                  <span>September 2023 — Present</span>
+                  <span>Makati, Philippines</span>
+                </div>
+                <h3>Mid-Level Programmer</h3>
+                <h4>Moylan's Insurance</h4>
+                <p>Develop and maintain accounting systems with complex business rules and calculations. Investigate production issues, perform controlled data fixes, trace root causes, and communicate directly with end users to resolve concerns.</p>
+                <div class="career-tags"><span>VB.NET</span><span>SQL Server</span><span>DevExpress</span><span>Crystal Reports</span></div>
+              </div>
+            </article>
+
+            <article class="career-item reveal delay-1">
+              <div class="career-marker"><span></span></div>
+              <div class="career-card spotlight-card">
+                <div class="career-meta">
+                  <span>September 2022 — September 2023</span>
+                  <span>Makati, Philippines</span>
+                </div>
+                <h3>Entry-Level Programmer</h3>
+                <h4>Moylan's Insurance</h4>
+                <p>Supported underwriting systems, data encoding workflows, maintenance, reports, and production troubleshooting while building a strong foundation in enterprise application development.</p>
+                <div class="career-tags"><span>VB.NET</span><span>SQL Server</span><span>Reporting</span><span>System Support</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
-      <h2 class="section-title">Professional journey</h2>
-      <p class="section-desc">My career as a developer.</p>
+    </section>
 
-      <div class="timeline-wrap">
-        <div class="timeline-track"></div>
-        <div class="timeline-entries">
+    <section class="section projects" id="projects">
+      <div class="shell">
+        <div class="projects-heading reveal">
+          <div class="section-heading">
+            <div class="section-index">05</div>
+            <div>
+              <span class="section-kicker">Selected work</span>
+              <h2>Systems designed around real workflows.</h2>
+            </div>
+          </div>
+          <p>Each project explores a different operational problem—from ecommerce and reservations to education, retail, and HR.</p>
+        </div>
 
-          <div class="tl-entry reveal">
-            <div class="tl-dot"></div>
-            <div class="tl-card">
-              <div class="tl-date">Sep 2023 — Present</div>
-              <div class="tl-title">Mid-Level Programmer</div>
-              <div class="tl-company">Moylan's Insurance</div>
-              <p class="tl-desc">Promoted after consistent performance. Primarily working on accounting systems with complex business logic and calculations. Handles data fixes, investigates and traces root causes of reported issues, and communicates directly with end users to resolve problems — no longer requiring supervisor mediation for user concerns.</p>
+        <div class="featured-project reveal spotlight-card" id="resort-showcase" data-project-gallery data-autoplay="5200">
+          <div class="project-browser">
+            <div class="project-browser-bar" aria-hidden="true">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <div class="browser-address">Kekamiya Resort Admin · <strong id="resort-screen-label">Dashboard</strong></div>
+              <div class="browser-screen-count" id="resort-screen-count">01 / 09</div>
+            </div>
+            <div class="project-visual">
+              <img id="resort-main-image" src="images/resort/dashboard.webp" alt="Kekamiya Resort Management System dashboard" loading="eager" />
+              <div class="project-visual-overlay"></div>
+              <span class="project-type">Featured system</span>
+              <div class="project-gallery-nav">
+                <button class="gallery-arrow" id="resort-prev" type="button" aria-label="Show previous Resort Management System screen">←</button>
+                <button class="gallery-arrow" id="resort-next" type="button" aria-label="Show next Resort Management System screen">→</button>
+              </div>
             </div>
           </div>
 
-          <div class="tl-entry reveal reveal-delay-2">
-            <div class="tl-dot"></div>
-            <div class="tl-card">
-              <div class="tl-date">Sep 2022 — Sep 2023</div>
-              <div class="tl-title">Entry-Level Programmer</div>
-              <div class="tl-company">Moylan's Insurance</div>
-              <p class="tl-desc">First role out of college. Worked primarily on underwriting systems, handling data encoding and system maintenance. Gained hands-on experience with VB.NET, SQL Server, and Crystal Reports in a production insurance environment.</p>
+          <div class="project-gallery" id="resort-gallery" role="tablist" aria-label="Resort Management System interface screens">
+            <button class="project-thumb active" type="button" role="tab" aria-selected="true" data-src="images/resort/dashboard.webp" data-label="Dashboard" data-alt="Kekamiya Resort Management System dashboard"><img src="images/resort/dashboard.webp" alt="" loading="lazy" /><span>Dashboard</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/resort/reservations.webp" data-label="Reservations" data-alt="Kekamiya Resort reservation management screen"><img src="images/resort/reservations.webp" alt="" loading="lazy" /><span>Reservations</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/resort/rooms.webp" data-label="Rooms" data-alt="Kekamiya Resort room inventory screen"><img src="images/resort/rooms.webp" alt="" loading="lazy" /><span>Rooms</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/resort/guests.webp" data-label="Guests" data-alt="Kekamiya Resort guest management screen"><img src="images/resort/guests.webp" alt="" loading="lazy" /><span>Guests</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/resort/payments.webp" data-label="Payments" data-alt="Kekamiya Resort payment verification screen"><img src="images/resort/payments.webp" alt="" loading="lazy" /><span>Payments</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/resort/financials.webp" data-label="Financials" data-alt="Kekamiya Resort financial overview screen"><img src="images/resort/financials.webp" alt="" loading="lazy" /><span>Financials</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/resort/notifications.webp" data-label="Notifications" data-alt="Kekamiya Resort notifications screen"><img src="images/resort/notifications.webp" alt="" loading="lazy" /><span>Notifications</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/resort/activity-logs.webp" data-label="Activity Logs" data-alt="Kekamiya Resort activity logs screen"><img src="images/resort/activity-logs.webp" alt="" loading="lazy" /><span>Activity Logs</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/resort/users.webp" data-label="Users" data-alt="Kekamiya Resort user management screen"><img src="images/resort/users.webp" alt="" loading="lazy" /><span>Users</span></button>
+          </div>
+
+          <div class="project-content">
+            <div class="project-number">01</div>
+            <div class="project-copy">
+              <span class="project-kicker">Hospitality operations</span>
+              <h3>Resort Management System</h3>
+              <p>A full-stack administration platform that brings reservations, room inventory, guests, payments, financial monitoring, notifications, audit trails, and role-based user management into one operating workspace.</p>
+            </div>
+            <div class="project-meta-column">
+              <ul class="project-points">
+                <li>End-to-end reservation and check-in workflow</li>
+                <li>Payment verification and financial reporting</li>
+                <li>Real-time notifications, audit logs, and user roles</li>
+              </ul>
+              <div class="project-footer">
+                <div class="project-tags"><span>Next.js</span><span>TypeScript</span><span>Neon PostgreSQL</span><span>Drizzle</span></div>
+                <a class="project-link magnetic" href="https://full-resort-management-system.vercel.app" target="_blank" rel="noopener" aria-label="Open Resort Management System">↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-project featured-project-secondary reveal spotlight-card" id="pc-ecommerce-showcase" data-project-gallery data-autoplay="5600">
+          <div class="project-browser">
+            <div class="project-browser-bar" aria-hidden="true">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <div class="browser-address">PCJ PC Commerce · <strong>Admin Dashboard</strong></div>
+              <div class="browser-screen-count">01 / 06</div>
+            </div>
+            <div class="project-visual project-visual-contain">
+              <img src="images/pc-ecommerce/dashboard.webp" alt="PCJ PC ecommerce admin dashboard showing products, orders, revenue, and low-stock inventory" loading="lazy" />
+              <span class="project-type">Full-stack ecommerce</span>
+              <div class="project-gallery-nav">
+                <button class="gallery-arrow" type="button" aria-label="Show previous PC ecommerce screen">←</button>
+                <button class="gallery-arrow" type="button" aria-label="Show next PC ecommerce screen">→</button>
+              </div>
             </div>
           </div>
 
+          <div class="project-gallery" role="tablist" aria-label="PCJ PC ecommerce interface screens">
+            <button class="project-thumb active" type="button" role="tab" aria-selected="true" data-src="images/pc-ecommerce/dashboard.webp" data-label="Admin Dashboard" data-alt="PCJ PC ecommerce admin dashboard showing products, orders, revenue, and low-stock inventory"><img src="images/pc-ecommerce/dashboard.webp" alt="" loading="lazy" /><span>Dashboard</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/pc-ecommerce/login.webp" data-label="Authentication" data-alt="PCJ PC ecommerce login screen with demo administrator and customer accounts"><img src="images/pc-ecommerce/login.webp" alt="" loading="lazy" /><span>Login</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/pc-ecommerce/products.webp" data-label="Products" data-alt="PCJ PC ecommerce product inventory management screen"><img src="images/pc-ecommerce/products.webp" alt="" loading="lazy" /><span>Products</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/pc-ecommerce/categories.webp" data-label="Categories" data-alt="PCJ PC ecommerce category management screen"><img src="images/pc-ecommerce/categories.webp" alt="" loading="lazy" /><span>Categories</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/pc-ecommerce/orders.webp" data-label="Order Management" data-alt="PCJ PC ecommerce administrator order management screen with payment and fulfilment statuses"><img src="images/pc-ecommerce/orders.webp" alt="" loading="lazy" /><span>Orders</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/pc-ecommerce/my-orders.webp" data-label="Customer Orders" data-alt="PCJ PC ecommerce customer order tracking screen"><img src="images/pc-ecommerce/my-orders.webp" alt="" loading="lazy" /><span>My Orders</span></button>
+          </div>
+
+          <div class="project-content">
+            <div class="project-number">02</div>
+            <div class="project-copy">
+              <span class="project-kicker">Commerce &amp; inventory</span>
+              <h3>PCJ PC E-Commerce</h3>
+              <p>A complete PC components commerce platform with separate customer and administrator experiences—from authentication and shopping to product catalog control, stock monitoring, payment visibility, and order fulfilment.</p>
+            </div>
+            <div class="project-meta-column">
+              <ul class="project-points">
+                <li>Role-based customer and administrator access</li>
+                <li>Product, category, pricing, and stock management</li>
+                <li>Cart, checkout, payment status, and order tracking</li>
+              </ul>
+              <div class="project-footer">
+                <div class="project-tags"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Tailwind CSS</span></div>
+                <a class="project-link magnetic" href="https://pc-ecommerce.vercel.app/" target="_blank" rel="noopener" aria-label="Open PCJ PC E-Commerce">↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-project featured-project-secondary reveal spotlight-card" id="student-management-showcase" data-project-gallery data-autoplay="6000">
+          <div class="project-browser">
+            <div class="project-browser-bar" aria-hidden="true">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <div class="browser-address">EduTrack · <strong>Dashboard</strong></div>
+              <div class="browser-screen-count">01 / 07</div>
+            </div>
+            <div class="project-visual project-visual-contain">
+              <img src="images/student-registration/dashboard.webp" alt="EduTrack student management dashboard showing totals for students, courses, subjects, and enrollments" loading="lazy" />
+              <span class="project-type">Academic management</span>
+              <div class="project-gallery-nav">
+                <button class="gallery-arrow" type="button" aria-label="Show previous student management screen">←</button>
+                <button class="gallery-arrow" type="button" aria-label="Show next student management screen">→</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-gallery" role="tablist" aria-label="EduTrack student management interface screens">
+            <button class="project-thumb active" type="button" role="tab" aria-selected="true" data-src="images/student-registration/dashboard.webp" data-label="Dashboard" data-alt="EduTrack student management dashboard showing totals for students, courses, subjects, and enrollments"><img src="images/student-registration/dashboard.webp" alt="" loading="lazy" /><span>Dashboard</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/student-registration/students.webp" data-label="Students" data-alt="EduTrack student records management screen with searchable student list and actions"><img src="images/student-registration/students.webp" alt="" loading="lazy" /><span>Students</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/student-registration/courses.webp" data-label="Courses" data-alt="EduTrack course management screen listing available academic programs"><img src="images/student-registration/courses.webp" alt="" loading="lazy" /><span>Courses</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/student-registration/subjects.webp" data-label="Subjects" data-alt="EduTrack subject management screen for curriculum records"><img src="images/student-registration/subjects.webp" alt="" loading="lazy" /><span>Subjects</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/student-registration/enrollments.webp" data-label="Enrollments" data-alt="EduTrack enrollment management screen showing students, semesters, and subject counts"><img src="images/student-registration/enrollments.webp" alt="" loading="lazy" /><span>Enrollments</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/student-registration/users.webp" data-label="User Management" data-alt="EduTrack user management screen with pending requests and approval actions"><img src="images/student-registration/users.webp" alt="" loading="lazy" /><span>Users</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/student-registration/audit-logs.webp" data-label="Audit Logs" data-alt="EduTrack audit log screen showing admin actions and system history"><img src="images/student-registration/audit-logs.webp" alt="" loading="lazy" /><span>Audit Logs</span></button>
+          </div>
+
+          <div class="project-content">
+            <div class="project-number">03</div>
+            <div class="project-copy">
+              <span class="project-kicker">Education administration</span>
+              <h3>Student Management System</h3>
+              <p>An academic operations platform that centralizes student records, course and subject administration, enrollment workflows, user approvals, and activity tracking in one clean dashboard experience.</p>
+            </div>
+            <div class="project-meta-column">
+              <ul class="project-points">
+                <li>Student profiles, status controls, and searchable records</li>
+                <li>Course, curriculum subject, and enrollment management</li>
+                <li>User approval workflow with detailed audit logs</li>
+              </ul>
+              <div class="project-footer">
+                <div class="project-tags"><span>Next.js</span><span>React</span><span>PostgreSQL</span><span>Tailwind CSS</span></div>
+                <a class="project-link magnetic" href="https://student-registration-system-nine-topaz.vercel.app/" target="_blank" rel="noopener" aria-label="Open Student Management System">↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="featured-project featured-project-secondary reveal spotlight-card" id="pos-showcase" data-project-gallery data-autoplay="5600">
+          <div class="project-browser">
+            <div class="project-browser-bar" aria-hidden="true">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <div class="browser-address">POS System · <strong>POS / Checkout</strong></div>
+              <div class="browser-screen-count">01 / 06</div>
+            </div>
+            <div class="project-visual project-visual-contain">
+              <img src="images/pos-system/checkout.webp" alt="POS System checkout screen with category filters, product cards, and cart summary" loading="lazy" />
+              <span class="project-type">Retail operations</span>
+              <div class="project-gallery-nav">
+                <button class="gallery-arrow" type="button" aria-label="Show previous POS System screen">←</button>
+                <button class="gallery-arrow" type="button" aria-label="Show next POS System screen">→</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-gallery" role="tablist" aria-label="POS System interface screens">
+            <button class="project-thumb active" type="button" role="tab" aria-selected="true" data-src="images/pos-system/checkout.webp" data-label="POS / Checkout" data-alt="POS System checkout screen with category filters, product cards, and cart summary"><img src="images/pos-system/checkout.webp" alt="" loading="lazy" /><span>Checkout</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/pos-system/dashboard.webp" data-label="Dashboard" data-alt="POS System dashboard with sales summary, transactions, active products, and top products"><img src="images/pos-system/dashboard.webp" alt="" loading="lazy" /><span>Dashboard</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/pos-system/inventory.webp" data-label="Inventory" data-alt="POS System inventory management screen listing products, stock, alerts, and actions"><img src="images/pos-system/inventory.webp" alt="" loading="lazy" /><span>Inventory</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/pos-system/categories.webp" data-label="Categories" data-alt="POS System product category management screen showing category cards"><img src="images/pos-system/categories.webp" alt="" loading="lazy" /><span>Categories</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/pos-system/users.webp" data-label="Users" data-alt="POS System user management screen with role permissions"><img src="images/pos-system/users.webp" alt="" loading="lazy" /><span>Users</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/pos-system/reports.webp" data-label="Reports" data-alt="POS System reports screen with date filters, total sales, and top products panel"><img src="images/pos-system/reports.webp" alt="" loading="lazy" /><span>Reports</span></button>
+          </div>
+
+          <div class="project-content">
+            <div class="project-number">04</div>
+            <div class="project-copy">
+              <span class="project-kicker">Retail checkout & inventory</span>
+              <h3>POS &amp; Inventory System</h3>
+              <p>A streamlined point-of-sale platform built for fast retail operations—combining checkout, live inventory control, product categories, user roles, and reporting into one efficient back-office workflow.</p>
+            </div>
+            <div class="project-meta-column">
+              <ul class="project-points">
+                <li>Fast checkout flow with category filtering and cart summary</li>
+                <li>Inventory, stock alerts, and product category management</li>
+                <li>User permissions and sales reporting dashboards</li>
+              </ul>
+              <div class="project-footer">
+                <div class="project-tags"><span>Python</span><span>Flask</span><span>Neon DB</span><span>Bootstrap</span></div>
+                <a class="project-link magnetic" href="https://python-pos-system-jzau.onrender.com" target="_blank" rel="noopener" aria-label="Open POS and Inventory System">↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="featured-project featured-project-secondary reveal spotlight-card" id="hr-ems-showcase" data-project-gallery data-autoplay="5900">
+          <div class="project-browser">
+            <div class="project-browser-bar" aria-hidden="true">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <div class="browser-address">HR EMS · <strong>Dashboard</strong></div>
+              <div class="browser-screen-count">01 / 05</div>
+            </div>
+            <div class="project-visual project-visual-contain">
+              <img src="images/hr-ems/dashboard.webp" alt="HR Employee Management System dashboard showing employee status totals and attendance analytics" loading="lazy" />
+              <span class="project-type">Human resources</span>
+              <div class="project-gallery-nav">
+                <button class="gallery-arrow" type="button" aria-label="Show previous HR management screen">←</button>
+                <button class="gallery-arrow" type="button" aria-label="Show next HR management screen">→</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-gallery" role="tablist" aria-label="HR Employee Management System interface screens">
+            <button class="project-thumb active" type="button" role="tab" aria-selected="true" data-src="images/hr-ems/dashboard.webp" data-label="Dashboard" data-alt="HR Employee Management System dashboard showing employee status totals and attendance analytics"><img src="images/hr-ems/dashboard.webp" alt="" loading="lazy" /><span>Dashboard</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/hr-ems/employees.webp" data-label="Employees" data-alt="HR Employee Management System employee directory with department and status filters"><img src="images/hr-ems/employees.webp" alt="" loading="lazy" /><span>Employees</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/hr-ems/attendance.webp" data-label="Attendance" data-alt="HR Employee Management System attendance tracker with monthly calendars for each employee"><img src="images/hr-ems/attendance.webp" alt="" loading="lazy" /><span>Attendance</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/hr-ems/leave-requests.webp" data-label="Leave Requests" data-alt="HR Employee Management System leave request management screen with approval statuses"><img src="images/hr-ems/leave-requests.webp" alt="" loading="lazy" /><span>Leave Requests</span></button>
+            <button class="project-thumb" type="button" role="tab" aria-selected="false" data-src="images/hr-ems/payroll.webp" data-label="Payroll" data-alt="HR Employee Management System payroll screen showing salaries, allowances, deductions, and net pay"><img src="images/hr-ems/payroll.webp" alt="" loading="lazy" /><span>Payroll</span></button>
+          </div>
+
+          <div class="project-content">
+            <div class="project-number">05</div>
+            <div class="project-copy">
+              <span class="project-kicker">Workforce administration</span>
+              <h3>HR Employee Management System</h3>
+              <p>A responsive human resources platform for managing employee records, attendance history, leave approvals, and payroll summaries from a unified administrative workspace.</p>
+            </div>
+            <div class="project-meta-column">
+              <ul class="project-points">
+                <li>Employee directory with department and status filtering</li>
+                <li>Monthly attendance tracking and leave approval workflow</li>
+                <li>Payroll breakdowns with allowances, deductions, and exports</li>
+              </ul>
+              <div class="project-footer">
+                <div class="project-tags"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Tailwind CSS</span></div>
+                <a class="project-link magnetic" href="https://hr-management-sage.vercel.app/" target="_blank" rel="noopener" aria-label="Open HR Employee Management System">↗</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── PROJECTS ── -->
-  <section id="projects" class="section section-alt">
-    <div class="container">
-      <div class="section-eyebrow">
-        <span class="eyebrow-line"></span>
-        <span class="eyebrow-label">Featured Projects</span>
-      </div>
-      <h2 class="section-title">Things I've built</h2>
-      <p class="section-desc">Selected systems built for real business and operational use cases.</p>
-
-      <div class="projects-grid">
-
-        <!-- Featured: PC Ecommerce (spans 2 cols) -->
-        <div class="proj-card reveal">
-          <div class="proj-image-wrap">
-            <img src="images/pcj-pc-store.png" alt="PCJ PC Store — PC Parts Ecommerce">
-          </div>
-          <div class="proj-body">
-            <div class="proj-header-row">
-              <div class="proj-title">PCJ PC Store</div>
-              <a href="https://pc-ecommerce.vercel.app/" target="_blank" class="btn-proj-outline" aria-label="View live project">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H6M12 2v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Try It
-              </a>
-            </div>
-            <p class="proj-desc">A full-featured PC parts ecommerce platform — browse by category, manage a cart, place orders, and track them. Includes an admin panel for inventory and order management, with role-based auth and real-time stock status.</p>
-            <div class="proj-tags">
-              <span class="proj-tag">Next.js</span>
-              <span class="proj-tag">React</span>
-              <span class="proj-tag">TypeScript</span>
-              <span class="proj-tag">Tailwind</span>
-              <span class="proj-tag">PostgreSQL</span>
-              <span class="proj-tag">Vercel</span>
-            </div>
+    <section class="section contact" id="contact">
+      <div class="contact-orb" aria-hidden="true"></div>
+      <div class="shell contact-layout">
+        <div class="contact-copy reveal">
+          <div class="section-index light-index">06</div>
+          <span class="section-kicker">Contact</span>
+          <h2>Have a system in mind?<br /><span>Let’s make it work.</span></h2>
+          <p>For development opportunities, collaborations, or custom business systems, send a message and share what you are planning.</p>
+          <div class="contact-details">
+            <a href="mailto:engrpaulojimena@gmail.com">engrpaulojimena@gmail.com <span>↗</span></a>
+            <a href="https://github.com/engrpaulojimena" target="_blank" rel="noopener">github.com/engrpaulojimena <span>↗</span></a>
           </div>
         </div>
 
-        <!-- Resort Management System -->
-        <div class="proj-card reveal reveal-delay-1">
-          <div class="proj-image-wrap">
-            <img src="images/resort-admin-preview.png" alt="Resort Management System">
+        <form class="contact-form reveal delay-1" id="contact-form" action="https://formspree.io/f/mqeojadw" method="POST">
+          <div class="field-row">
+            <label>
+              <span>Your name</span>
+              <input type="text" name="name" placeholder="Name" autocomplete="name" required />
+            </label>
+            <label>
+              <span>Email address</span>
+              <input type="email" name="email" placeholder="email@example.com" autocomplete="email" required />
+            </label>
           </div>
-          <div class="proj-body">
-            <div class="proj-header-row">
-              <div class="proj-title">Resort Management System</div>
-              <a href="https://full-resort-management-system.vercel.app" target="_blank" class="btn-proj-outline" aria-label="View live project">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H6M12 2v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Try It
-              </a>
-            </div>
-            <p class="proj-desc">Full-stack resort admin dashboard for managing reservations, rooms, guests, and payments — with real-time occupancy tracking, multi-step booking flow, partial payment support, PDF receipt generation, and automated guest email notifications via Nodemailer.</p>
-            <div class="proj-tags">
-              <span class="proj-tag">Next.js</span>
-              <span class="proj-tag">React</span>
-              <span class="proj-tag">TypeScript</span>
-              <span class="proj-tag">Drizzle ORM</span>
-              <span class="proj-tag">Neon PostgreSQL</span>
-              <span class="proj-tag">Nodemailer</span>
-              <span class="proj-tag">jsPDF</span>
-            </div>
+          <label>
+            <span>What are you planning?</span>
+            <textarea name="message" placeholder="Tell me about the project, role, or problem you want to solve." required></textarea>
+          </label>
+          <div class="form-footer">
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+            <button class="button button-contact magnetic" type="submit" id="submit-btn">
+              Send message
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" /></svg>
+            </button>
           </div>
-        </div>
-
-        <div class="proj-card reveal reveal-delay-2">
-          <div class="proj-image-wrap">
-            <img src="images/student-registration-preview.png" alt="Student Registration System">
-          </div>
-          <div class="proj-body">
-            <div class="proj-header-row">
-              <div class="proj-title">Student Registration System</div>
-              <a href="https://student-registration-system-nine-topaz.vercel.app/" target="_blank" class="btn-proj-outline" aria-label="View live project">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H6M12 2v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Try It
-              </a>
-            </div>
-            <p class="proj-desc">Web-based system for managing student registration, enrollment, courses, and subject records.</p>
-            <div class="proj-tags">
-              <span class="proj-tag">Next.js</span>
-              <span class="proj-tag">React</span>
-              <span class="proj-tag">TypeScript</span>
-              <span class="proj-tag">Tailwind</span>
-              <span class="proj-tag">PostgreSQL</span>
-              <span class="proj-tag">Nodemailer</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="proj-card reveal reveal-delay-3">
-          <div class="proj-image-wrap">
-            <img src="images/pos-preview.png" alt="POS & Inventory System">
-          </div>
-          <div class="proj-body">
-            <div class="proj-header-row">
-              <div class="proj-title">POS & Inventory System</div>
-              <a href="https://python-pos-system-jzau.onrender.com" target="_blank" class="btn-proj-outline" aria-label="View live project">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H6M12 2v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Try It
-              </a>
-            </div>
-            <p class="proj-desc">Sales transactions, inventory tracking, product management, and reporting for retail businesses.</p>
-            <div class="proj-tags">
-              <span class="proj-tag">Python</span>
-              <span class="proj-tag">Flask</span>
-              <span class="proj-tag">HTML/CSS</span>
-              <span class="proj-tag">Neon DB</span>
-              <span class="proj-tag">Render</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="proj-card reveal reveal-delay-4">
-          <div class="proj-image-wrap">
-            <img src="images/hr-ems.png" alt="HR Employee Management System">
-          </div>
-          <div class="proj-body">
-            <div class="proj-header-row">
-              <div class="proj-title">HR Employee Management</div>
-              <a href="https://hr-management-sage.vercel.app/" target="_blank" class="btn-proj-outline" aria-label="View live project">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H6M12 2v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Try It
-              </a>
-            </div>
-            <p class="proj-desc">Full-featured HR system for managing employees, departments, payroll, and attendance records.</p>
-            <div class="proj-tags">
-              <span class="proj-tag">Next.js</span>
-              <span class="proj-tag">React</span>
-              <span class="proj-tag">TypeScript</span>
-              <span class="proj-tag">Tailwind</span>
-              <span class="proj-tag">PostgreSQL</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ── CONTACT ── -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="section-eyebrow">
-        <span class="eyebrow-line"></span>
-        <span class="eyebrow-label">Contact</span>
-      </div>
-      <h2 class="section-title">Let's work together</h2>
-      <p class="section-desc">If you'd like to discuss an opportunity or collaborate on a project, feel free to send a message.</p>
-
-      <div class="contact-wrap reveal">
-        <form class="contact-form" id="contact-form" action="https://formspree.io/f/mqeojadw" method="POST">
-          <input type="text"  name="name"    placeholder="Your Name"    required />
-          <input type="email" name="email"   placeholder="Your Email"   required />
-          <textarea           name="message" placeholder="Your Message" required></textarea>
-          <button type="submit" id="submit-btn">Send Message</button>
-          <p class="form-status" id="form-status"></p>
         </form>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- ── FOOTER ── -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p class="footer-logo">PJ</p>
-      <p class="footer-copy">© 2024 Paulo C. Jimena. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="mailto:engrpaulojimena@gmail.com">Email</a>
+  <footer class="site-footer">
+    <div class="shell footer-layout">
+      <div>
+        <strong>Paulo C. Jimena</strong>
+        <span>Full Stack Developer</span>
       </div>
+      <p>Designed and built with intention · © 2026</p>
+      <a href="#home">Back to top ↑</a>
     </div>
   </footer>
 
-  <script>
-  // ── Hamburger ──
-  const hamburger = document.getElementById('hamburger');
-  const navLinks  = document.getElementById('nav-links');
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    navLinks.classList.toggle('open');
-  });
-  document.querySelectorAll('.nav-link').forEach(l =>
-    l.addEventListener('click', () => {
-      hamburger.classList.remove('open');
-      navLinks.classList.remove('open');
-    })
-  );
-
-  // ── Theme toggle ──
-  const themeBtn   = document.getElementById('theme-toggle');
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'light') { document.body.classList.add('light'); themeBtn.textContent = '☀️'; }
-  themeBtn.addEventListener('click', () => {
-    document.body.classList.toggle('light');
-    const isLight = document.body.classList.contains('light');
-    themeBtn.textContent = isLight ? '☀️' : '🌙';
-    localStorage.setItem('theme', isLight ? 'light' : 'dark');
-  });
-
-  // ── Scroll reveal ──
-  const revealObs = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
-
-  // ── Stats counter ──
-  function animateCounters() {
-    document.querySelectorAll('.stat-number').forEach(el => {
-      const target = +el.dataset.target;
-      const step   = target / (1500 / 16);
-      let cur = 0;
-      const t = setInterval(() => {
-        cur += step;
-        if (cur >= target) { el.textContent = target; clearInterval(t); }
-        else el.textContent = Math.floor(cur);
-      }, 16);
-    });
-  }
-
-  // ── Skill bars ──
-  function animateSkills() {
-    document.querySelectorAll('.skill-fill').forEach(bar => {
-      bar.style.width = bar.dataset.width + '%';
-    });
-  }
-
-  const statsObs = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { animateCounters(); statsObs.unobserve(e.target); } });
-  }, { threshold: 0.3 });
-  statsObs.observe(document.querySelector('.stats-strip'));
-
-  const skillsObs = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { animateSkills(); skillsObs.unobserve(e.target); } });
-  }, { threshold: 0.2 });
-  skillsObs.observe(document.getElementById('skill-bars'));
-
-  // ── Formspree contact ──
-  const form      = document.getElementById('contact-form');
-  const status    = document.getElementById('form-status');
-  const submitBtn = document.getElementById('submit-btn');
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    submitBtn.textContent = 'Sending…';
-    submitBtn.disabled = true;
-    try {
-      const res = await fetch(form.action, {
-        method: 'POST', body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      });
-      if (res.ok) {
-        status.textContent = '✓ Message sent! I will get back to you soon.';
-        status.className = 'form-status success';
-        form.reset();
-      } else {
-        status.textContent = '✗ Something went wrong. Please try again.';
-        status.className = 'form-status error';
-      }
-    } catch {
-      status.textContent = '✗ Network error. Please try again.';
-      status.className = 'form-status error';
-    }
-    submitBtn.textContent = 'Send Message';
-    submitBtn.disabled = false;
-  });
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
